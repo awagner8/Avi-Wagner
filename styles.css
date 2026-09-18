@@ -959,6 +959,45 @@ a {
     font-size: clamp(1.6rem, 3vw, 2.05rem);
 }
 
+.wip {
+    display: inline-block;
+    transform: translateY(-.28em);
+    margin-left: 10px;
+    padding: 4px 10px;
+    border: 1px solid color-mix(in srgb, var(--clay) 40%, transparent);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--clay) 12%, transparent);
+    color: var(--clay);
+    font-family: var(--mono);
+    font-size: .52rem;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.project-video {
+    margin: 28px 0 0;
+}
+
+.project-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 1px solid var(--rule);
+    border-radius: var(--r-md);
+    background: #000;
+}
+
+.project-video figcaption {
+    margin-top: 12px;
+    color: var(--ink-3);
+    font-size: .82rem;
+    line-height: 1.5;
+}
+
 .project-line {
     margin: 0 0 18px;
     color: var(--ink-2);
@@ -1356,6 +1395,14 @@ a {
 
 .footer-note {
     color: var(--ink-3);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color .18s ease, border-color .18s ease;
+}
+
+.footer-note:hover {
+    color: var(--pine);
+    border-bottom-color: var(--pine);
 }
 
 /* ---------- 13. Motion -------------------------------------------------- */

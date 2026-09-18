@@ -28,6 +28,9 @@ then open http://localhost:8000. Opening `index.html` directly also works.
 ## Before this goes live
 
 1. **Search the HTML for `TODO(Avi)`** — three spots where only you know the answer.
+   Also search for `DEMO VIDEO SLOT` — the PlateBudget card has a ready-made
+   `<figure>` waiting, commented out. Drop the file at
+   `assets/projects/platebudget-demo.mp4`, delete the comment wrapper, done.
 2. **Delete `assets/img/1776104660922.png`** — the original LinkedIn download.
    `avi.jpg` is the optimised copy the site actually uses.
 3. **Decide about `assets/projects/breakout/Notes.md` and `claude.md`.** Anything in

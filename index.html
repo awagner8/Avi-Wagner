@@ -301,7 +301,7 @@
                                 <div class="project-headline">
                                     <span class="project-num">02</span>
                                     <span class="project-kind">Product &middot; Coursework</span>
-                                    <h3 class="project-title">PlateBudget</h3>
+                                    <h3 class="project-title">PlateBudget <span class="wip">In progress</span></h3>
                                     <p class="project-line">A weekly meal planner that designs seven dinners around a grocery budget, prices the list against a real store, and tells you what to swap when the week runs over.</p>
                                     <span class="project-tags">
                                         <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Tailwind</span><span class="tag">Docker</span><span class="tag">Claude API</span><span class="tag">Kroger API</span>
@@ -312,6 +312,7 @@
                                 <div class="project-glance">
                                     <p class="glance-head">At a glance</p>
                                     <dl class="glance">
+                                        <dt>Status</dt><dd>In progress &mdash; demo video coming</dd>
                                         <dt>Built from</dt><dd>A written spec with Must / Should / Won't-have scoping</dd>
                                         <dt>Model chain</dt><dd>Claude, falling back to GPT-5.1, then any OpenAI-compatible endpoint</dd>
                                         <dt>Pricing</dt><dd>Live Kroger API, degrading to estimates</dd>
@@ -337,7 +338,25 @@
                                          A screenshot or two would also carry this card a long way. -->
                                 </div>
 
-                                <p class="note">Coursework for CompSci 390 at Duke. The source lives on Duke's internal GitLab, so there's no public link yet &mdash; happy to walk through the code or demo it live.</p>
+                                <!-- ===== DEMO VIDEO SLOT =====
+                                     When the recording is ready:
+                                       1. Drop the file at assets/projects/platebudget-demo.mp4
+                                          (and optionally a still frame at platebudget-poster.jpg)
+                                       2. Delete this comment wrapper so the <figure> below goes live
+                                       3. Keep it under ~20 MB — GitHub Pages serves it on every view
+                                       4. Rewrite the <figcaption> to say what the clip shows
+
+                                <figure class="project-video">
+                                    <video controls preload="none" poster="assets/projects/platebudget-poster.jpg" width="1280" height="720">
+                                        <source src="assets/projects/platebudget-demo.mp4" type="video/mp4" />
+                                        Your browser can't play this video.
+                                        <a href="assets/projects/platebudget-demo.mp4">Download it instead.</a>
+                                    </video>
+                                    <figcaption>Planning a week, pricing the list, and swapping down under budget.</figcaption>
+                                </figure>
+                                ===== END DEMO VIDEO SLOT ===== -->
+
+                                <p class="note">Coursework for CompSci 390 at Duke, and still being built &mdash; a demo video is coming. The source lives on Duke's internal GitLab, so there's no public link yet; happy to walk through the code or demo it live.</p>
                             </div>
                         </details>
 
@@ -469,7 +488,7 @@
                 </div>
 
                 <div class="section-body">
-                    <h2 class="section-title reveal">The parts of the resume people actually ask about.</h2>
+                    <h2 class="section-title reveal">What I do with the rest of my time.</h2>
 
                     <div class="beyond">
                         <article class="beyond-item reveal">
@@ -596,7 +615,7 @@
     <footer class="site-footer">
         <div class="container footer-inner">
             <span>&copy; <span id="year"></span> Avi Wagner</span>
-            <span class="footer-note">Written by hand. No template, no framework.</span>
+            <a class="footer-note" href="mailto:avi.j.wagner@gmail.com">avi.j.wagner@gmail.com</a>
         </div>
     </footer>
 
