@@ -22,6 +22,7 @@
 /* ---------- 1. Tokens --------------------------------------------------- */
 
 :root {
+    --measure: 70ch;
     /* Light palette is the base definition. Dark only overrides. */
     --paper: #FBFAF7;
     --paper-2: #F4F1E9;
@@ -600,12 +601,6 @@ a {
     font-size: .68rem;
 }
 
-.rail-num {
-    color: var(--pine);
-    font-size: .68rem;
-    letter-spacing: .04em;
-}
-
 .rail-label::after {
     content: '';
     flex: 1;
@@ -640,7 +635,7 @@ a {
     color: var(--ink-2);
     font-size: 1.02rem;
     line-height: 1.72;
-    max-width: 64ch;
+    max-width: var(--measure);
     margin: 0 0 20px;
 }
 
@@ -681,7 +676,9 @@ a {
 
 .facts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* Shares --measure with .prose p so the right edges line up */
+    max-width: var(--measure);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1px;
     margin-top: 52px;
     background: var(--rule);
@@ -692,7 +689,7 @@ a {
 
 .fact {
     background: var(--surface);
-    padding: 22px 24px 24px;
+    padding: 20px 20px 22px;
 }
 
 .fact-key {
@@ -1506,6 +1503,11 @@ html.js .reveal.is-visible {
         gap: 24px;
     }
 
+    .facts {
+        max-width: none;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .is-feature .project-head {
         grid-template-columns: 1fr;
         gap: 26px;
@@ -1587,6 +1589,12 @@ html.js .reveal.is-visible {
     }
     .copy-btn {
         margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .facts {
+        grid-template-columns: 1fr;
     }
 }
 
