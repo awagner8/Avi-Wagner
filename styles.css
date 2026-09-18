@@ -658,6 +658,17 @@ a {
     font-style: italic;
 }
 
+.prose code {
+    padding: 2px 6px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--paper-2);
+    color: var(--ink);
+    font-family: var(--mono);
+    font-size: .85em;
+}
+
+.project-detail > .note,
 .prose .note {
     margin-top: 26px;
     padding-left: 16px;

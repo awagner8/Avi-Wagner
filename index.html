@@ -231,7 +231,7 @@
                 </div>
 
                 <div class="section-body">
-                    <h2 class="section-title reveal">Things I built because I wanted them to exist.</h2>
+                    <h2 class="section-title reveal">What I've built.</h2>
                     <p class="section-intro reveal">
                         Coursework and personal builds. Open any card for the full story &mdash; why it exists, how it works, and what I got wrong the first time.
                     </p>
@@ -295,11 +295,57 @@
                             </div>
                         </details>
 
+                        <!-- ============ 02 · PLATEBUDGET ============ -->
+                        <details class="project is-feature reveal">
+                            <summary class="project-head">
+                                <div class="project-headline">
+                                    <span class="project-num">02</span>
+                                    <span class="project-kind">Product &middot; Coursework</span>
+                                    <h3 class="project-title">PlateBudget</h3>
+                                    <p class="project-line">A weekly meal planner that designs seven dinners around a grocery budget, prices the list against a real store, and tells you what to swap when the week runs over.</p>
+                                    <span class="project-tags">
+                                        <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Tailwind</span><span class="tag">Docker</span><span class="tag">Claude API</span><span class="tag">Kroger API</span>
+                                    </span>
+                                    <span class="project-more"><span class="more-label"></span> <svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 4.5 6 8.5 10 4.5"/></svg></span>
+                                </div>
+
+                                <div class="project-glance">
+                                    <p class="glance-head">At a glance</p>
+                                    <dl class="glance">
+                                        <dt>Built from</dt><dd>A written spec with Must / Should / Won't-have scoping</dd>
+                                        <dt>Model chain</dt><dd>Claude, falling back to GPT-5.1, then any OpenAI-compatible endpoint</dd>
+                                        <dt>Pricing</dt><dd>Live Kroger API, degrading to estimates</dd>
+                                        <dt>Storage</dt><dd>localStorage only &mdash; no database, no account</dd>
+                                    </dl>
+                                </div>
+                            </summary>
+
+                            <div class="project-detail">
+                                <div class="prose">
+                                    <p>You tell it what you like, what you can spend, and how many people you're feeding. It designs seven dinners that <em>deliberately share ingredients</em>, consolidates them into one shopping list, prices that list against your actual Harris Teeter, and if the week runs over budget it proposes specific swaps to get back under.</p>
+                                    <p>The decision I'd defend hardest is showing the budget as a <strong>range rather than a number</strong>, and widening that range as more of the list falls back to estimated prices. A single total would look more authoritative and be less true. A mostly-estimated week should not present the same confidence as a fully-priced one, so the interface makes its own uncertainty visible instead of hiding it behind a tidy figure.</p>
+                                    <p>Everything is a fallback chain. The model chain runs Claude first, then GPT-5.1, then any OpenAI-compatible endpoint, all sharing byte-identical prompts and one Zod schema so the output shape can't drift between providers. The Kroger price provider never throws &mdash; missing credentials, no store near your ZIP, no product match, a timeout, a 5xx all resolve to &ldquo;no quote for this item&rdquo; and fall through to estimates. The consequence is the one I wanted: the app is fully usable before you have any store credentials at all.</p>
+                                    <p>Ingredient matching is where I made a deliberately narrow choice. Words like <em>ground</em>, <em>dried</em>, <em>frozen</em>, <em>diced</em> are specifically <strong>not</strong> stripped during matching, because ground beef is not beef and a can of diced tomatoes is not a fresh tomato. Being cleverer there would have produced a shorter list and a wrong one.</p>
+                                    <p>My favourite bug: Harris Teeter's chain code in Kroger's Locations API is <code>HART</code>, not <code>HARRISTEETER</code>. The wrong value isn't rejected &mdash; it returns <code>200</code> with zero stores. So the store picker silently empties, every price quietly falls back to an estimate, and nothing anywhere reports an error. A success response that means failure is the same shape of problem as the miscounting tracker I found at Deloitte, and I seem to keep finding them.</p>
+                                    <p>The README carries a known-limitations section naming the ways the estimate is wrong, including that unreconcilable pack sizes are priced as a single package and therefore bias the budget <em>low</em>. I'd rather ship a number with its error bars stated than one that looks clean.</p>
+                                    <!-- TODO(Avi): this has no public link because the repo lives on Duke's
+                                         internal GitLab (CompSci 390). Two options, both yours to make:
+                                           1. Deploy a demo to Vercel — it works without store credentials,
+                                              so a no-key deployment still demonstrates the whole flow.
+                                           2. Mirror to public GitHub — but check the course policy on
+                                              publishing coursework before you do.
+                                         A screenshot or two would also carry this card a long way. -->
+                                </div>
+
+                                <p class="note">Coursework for CompSci 390 at Duke. The source lives on Duke's internal GitLab, so there's no public link yet &mdash; happy to walk through the code or demo it live.</p>
+                            </div>
+                        </details>
+
                         <!-- ============ 02 · MARIO KART RL ============ -->
                         <details class="project reveal">
                             <summary class="project-head">
                                 <div class="project-headline">
-                                    <span class="project-num">02</span>
+                                    <span class="project-num">03</span>
                                     <span class="project-kind">Machine learning &middot; Team project</span>
                                     <h3 class="project-title">Teaching an agent to drive from pixels</h3>
                                     <p class="project-line">Deep RL agents that learn Super Mario Kart from raw frames, with no hand-crafted features. I built the PPO side.</p>
@@ -330,7 +376,7 @@
                         <details class="project reveal">
                             <summary class="project-head">
                                 <div class="project-headline">
-                                    <span class="project-num">03</span>
+                                    <span class="project-num">04</span>
                                     <span class="project-kind">Game &middot; Personal build</span>
                                     <h3 class="project-title">Break//Out</h3>
                                     <p class="project-line">A browser brickbreaker with levels, lives and a high score that survives a refresh. Playable right here, nothing to install.</p>

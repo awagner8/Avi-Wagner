@@ -13,6 +13,7 @@ assets/
   projects/
     FridgeHero deck (PDF + PPTX)
     breakout/   playable Break//Out demo, served live at /assets/projects/breakout/
+    menuhero/   PlateBudget source — GITIGNORED, see warning below
 ```
 
 ## Run locally
@@ -38,6 +39,22 @@ then open http://localhost:8000. Opening `index.html` directly also works.
 4. **Add a fourth project** when the private repo goes public (see below).
 4. **Re-export your resume** if it has changed; the file name must stay
    `Avi_Wagner_Resume.pdf` or update the three links that point at it.
+
+## ⚠ The menuhero/ folder does not belong here
+
+`assets/projects/menuhero/` is the PlateBudget source. It is deliberately
+gitignored, because it is ~1.1 GB, has its own `.git` pointing at Duke's
+internal GitLab, and contains `.env` / `.env.local` with live Anthropic,
+OpenAI and Kroger keys.
+
+Move it somewhere outside this repo:
+
+```
+mv assets/projects/menuhero ~/code/platebudget
+```
+
+The site does not read from it — the PlateBudget card is written copy only.
+Leaving it here risks committing live API keys to a public repo.
 
 ## Adding a project
 

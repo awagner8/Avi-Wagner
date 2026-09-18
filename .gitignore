@@ -21,3 +21,7 @@ node_modules/
 # Scratch
 _tmp_*
 *.bak
+
+# Nested project repo — has its own git, node_modules and live .env keys.
+# Must never be committed here.
+assets/projects/menuhero/
