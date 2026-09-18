@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Avi Wagner — Product</title>
+    <meta name="description" content="Avi Wagner — Computer Science at Duke, Philosophy minor. Technology strategy at Deloitte, data quality at Precisely. Looking for product management roles." />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Avi Wagner — Product" />
+    <meta property="og:description" content="Computer Science at Duke, Philosophy minor. Technology strategy at Deloitte, data quality at Precisely. Looking for product management roles." />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230E5F4F'/%3E%3Ctext x='50' y='67' font-size='48' font-family='Georgia,serif' font-weight='600' fill='%23FBFAF7' text-anchor='middle'%3EAW%3C/text%3E%3C/svg%3E"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400..600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+        /* Set theme before first paint so there is no flash. */
+        (function() {
+            document.documentElement.classList.add('js');
+            try {
+                var t = localStorage.getItem('theme');
+                if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="siteHeader">
+        <nav class="nav container" aria-label="Primary">
+            <a href="#top" class="nav-logo">
+                <span class="nav-logo-mark">AW</span>
+                <span class="nav-logo-name">Avi Wagner</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navPanel">
+      <span></span><span></span>
+    </button>
+
+            <div class="nav-panel" id="navPanel">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#beyond" class="nav-link">Beyond</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="assets/resume/Avi_Wagner_Resume.pdf" class="btn btn-solid btn-sm">Resume</a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark theme" title="Switch theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" width="17" height="17">
+            <circle cx="12" cy="12" r="4.2"/>
+            <g stroke-linecap="round"><path d="M12 2.4v2.4M12 19.2v2.4M2.4 12h2.4M19.2 12h2.4M5.2 5.2l1.7 1.7M17.1 17.1l1.7 1.7M18.8 5.2l-1.7 1.7M6.9 17.1l-1.7 1.7"/></g>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" width="17" height="17">
+            <path d="M20.4 14.2A8.6 8.6 0 0 1 9.8 3.6a8.6 8.6 0 1 0 10.6 10.6z"/>
+          </svg>
+        </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="top">
+            <div class="container">
+                <div class="hero-grid">
+
+                    <div class="hero-text">
+
+                        <h1 class="hero-name reveal">Avi&nbsp;Wagner</h1>
+
+                        <p class="hero-sub reveal">
+                            Computer Science at Duke with a Philosophy minor. Most recently technology strategy at
+                            <strong>Deloitte</strong>, working a multibillion-dollar bank carve-out. Before that, data quality at <strong>Precisely</strong>.
+                        </p>
+
+                        <div class="hero-actions reveal">
+                            <a href="#projects" class="btn btn-solid">See my work</a>
+                            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-portrait reveal">
+                        <figure class="portrait">
+                            <img id="portraitImg" src="assets/img/avi.jpg" alt="Portrait of Avi Wagner" width="800" height="800" />
+                            <div class="portrait-fallback" aria-hidden="true"><span>AW</span></div>
+                        </figure>
+                        <p class="portrait-caption">Durham, NC &nbsp;/&nbsp; West Orange, NJ</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 01 ABOUT ============ -->
+        <section id="about" class="section">
+            <div class="container section-grid">
+                <div class="rail">
+                    <p class="rail-label"><span class="rail-num">01</span> About</p>
+                </div>
+
+                <div class="section-body">
+                    <h2 class="section-title reveal">
+                        Both of my majors are about the same thing: finding the assumption nobody checked.
+                    </h2>
+
+                    <div class="prose reveal">
+                        <p>
+                            I study Computer Science at Duke with a minor in Philosophy. The pairing gets a raised eyebrow, but it's one skill practiced twice &mdash; locate the step everyone took for granted, then work out what breaks because of it.
+                        </p>
+                        <p>
+                            That has turned out to be most of my job. At Deloitte this past summer I worked a multibillion-dollar bank carve-out, where a tracker several workstreams depended on was quietly miscounting applications. Not because anyone was careless &mdash; the tagging
+                            logic simply didn't mean what everyone assumed it meant. Noticing it was the easy part. Getting it corrected, and making sure it couldn't silently drift again, was the real work.
+                        </p>
+                        <p>
+                            I want to build products because that instinct <em>is</em> the job description: sit between the people who know what's technically possible and the people who know what's actually needed, and decide what's worth doing first.
+                            I'm technical enough to know what I'm asking engineers for, and I'd rather ship the small right thing than the big plausible one.
+                        </p>
+                        <p>
+                            Away from that, I'm a volunteer firefighter and I cook seven-course tasting menus for sixteen people. Both are the same exercise: a plan, a clock, and no room for a step out of order.
+                        </p>
+                    </div>
+
+                    <div class="facts reveal">
+                        <div class="fact">
+                            <p class="fact-key">Education</p>
+                            <p class="fact-value">Duke University</p>
+                            <p class="fact-note">B.S. Computer Science, minor in Philosophy &middot; 2023&ndash;2027</p>
+                            <p class="fact-note">GPA 3.8 / 4.0</p>
+                        </div>
+                        <div class="fact">
+                            <p class="fact-key">Relevant coursework</p>
+                            <p class="fact-note">Applied Product Management &middot; Applied Machine Learning &middot; Data Science &amp; Statistical Thinking &middot; Design &amp; Analysis of Algorithms &middot; Data Structures &amp; Algorithms</p>
+                        </div>
+                        <div class="fact">
+                            <p class="fact-key">Right now</p>
+                            <p class="fact-note">Finishing my senior year at Duke. Volunteering with Lebanon VFD, and leading a Duke Consulting Club engagement with an early-stage K&ndash;12 education AI company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 02 EXPERIENCE ============ -->
+        <section id="experience" class="section section-alt">
+            <div class="container section-grid">
+                <div class="rail">
+                    <p class="rail-label"><span class="rail-num">02</span> Experience</p>
+                </div>
+
+                <div class="section-body">
+                    <h2 class="section-title reveal">Three summers, three very different ideas of what &ldquo;the data says.&rdquo;</h2>
+
+                    <ol class="roles">
+                        <li class="role reveal">
+                            <div class="role-meta">
+                                <span class="role-years">2026</span>
+                                <span class="role-span">Jun &ndash; Aug</span>
+                            </div>
+                            <div class="role-body">
+                                <h3 class="role-title">Technology Strategy Summer Scholar</h3>
+                                <p class="role-org">Deloitte <span class="role-loc">New York, NY</span></p>
+                                <ul class="role-points">
+                                    <li>Owned the Legal Day 1 employee experience deliverable on a multibillion-dollar bank M&amp;A carve-out, including command center readiness materials and a minute-by-minute execution plan.</li>
+                                    <li>Traced a tagging and formula gap that was silently miscounting applications, corrected it, and stood up a live dashboard now relied on up to the CxO level.</li>
+                                    <li>Ran biweekly RAID reviews, escalating roughly a dozen items to managers and surfacing new risks before they hit the critical path.</li>
+                                    <li>Built custom Claude-based AI skills to automate the repeatable parts of the workstream.</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="role reveal">
+                            <div class="role-meta">
+                                <span class="role-years">2025</span>
+                                <span class="role-span">Jun &ndash; Aug</span>
+                            </div>
+                            <div class="role-body">
+                                <h3 class="role-title">Data Quality Research Analyst Intern</h3>
+                                <p class="role-org">Precisely <span class="role-loc">Remote</span></p>
+                                <ul class="role-points">
+                                    <li>Worked under the Product Management team to validate industry datasets against ISO and regulatory standards, identifying 350+ semantic types and 1,000+ rules that feed the Data Integrity Suite's automated &ldquo;Recommended
+                                        Rules.&rdquo;</li>
+                                    <li>Researched and cataloged hundreds of datasets to support rule standardization and enrichment.</li>
+                                    <li>Compiled predefined rules across DQ products into a shared semantic rule library.</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="role reveal">
+                            <div class="role-meta">
+                                <span class="role-years">2024</span>
+                                <span class="role-span">Jun &ndash; Aug</span>
+                            </div>
+                            <div class="role-body">
+                                <h3 class="role-title">Marketing and Data Analyst</h3>
+                                <p class="role-org">Eventus Advisory Group <span class="role-loc">Remote</span></p>
+                                <ul class="role-points">
+                                    <li>Built a BERT-based model to analyze $2M in billing data and surface automation opportunities.</li>
+                                    <li>Ran market research and analysis for lead generation, contributing to increased client acquisition.</li>
+                                    <li>Coordinated with C-suite attendees at Liquidity Summit 2024, prequalifying clients and handling logistics.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 03 PROJECTS ============ -->
+        <section id="projects" class="section">
+            <div class="container section-grid">
+                <div class="rail">
+                    <p class="rail-label"><span class="rail-num">03</span> Projects</p>
+                </div>
+
+                <div class="section-body">
+                    <h2 class="section-title reveal">Things I built because I wanted them to exist.</h2>
+                    <p class="section-intro reveal">
+                        Coursework and personal builds. Open any card for the full story &mdash; why it exists, how it works, and what I got wrong the first time.
+                    </p>
+
+                    <div class="project-grid">
+
+                        <!-- ============ 01 · FRIDGEHERO ============ -->
+                        <details class="project is-feature reveal">
+                            <summary class="project-head">
+                                <div class="project-headline">
+                                    <span class="project-num">01</span>
+                                    <span class="project-kind">Product &middot; Team project</span>
+                                    <h3 class="project-title">FridgeHero</h3>
+                                    <p class="project-line">A food-tracking app for families, taken from user interviews through to a North Star metric and a go-to-market plan.</p>
+                                    <span class="project-tags">
+                                        <span class="tag">User research</span><span class="tag">Figma Make</span><span class="tag">Lovable</span><span class="tag">GTM</span>
+                                    </span>
+                                    <span class="project-more"><span class="more-label"></span> <svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 4.5 6 8.5 10 4.5"/></svg></span>
+                                </div>
+                                <div class="project-glance">
+                                    <p class="glance-head">At a glance</p>
+                                    <dl class="glance">
+                                        <dt>Course</dt><dd>Applied Product Management, Duke</dd>
+                                        <dt>Research</dt><dd>10 in-depth user interviews, 3 proto-persona archetypes</dd>
+                                        <dt>Prototype</dt><dd>Figma Make + Lovable</dd>
+                                        <dt>North Star</dt><dd>70%+ food saved per user</dd>
+                                    </dl>
+                                </div>
+                            </summary>
+
+                            <div class="project-detail">
+                                <div class="prose">
+                                    <p>American households throw out 30&ndash;40% of the food they buy &mdash; about $2,900 a year for a family of four. The reason isn't that people don't care. It's that a fridge has no interface. You can't see what's in it, when it expires, or what you already bought last week.</p>
+                                    <p>We ran ten in-depth user interviews and mapped three proto-persona archetypes before designing anything. That pointed at Jessica: 34, two kids, full-time job, the primary grocery shopper in her household. Mothers are the primary shopper in roughly 80% of households and families with kids waste the most food per capita, so she had both the highest waste and the strongest financial reason to change.</p>
+                                    <p>Mapping her food lifecycle across five stages surfaced two pain points worth building for: <strong>over-purchasing</strong> (buying &ldquo;just in case,&rdquo; swayed by bulk deals, no visibility into current stock) and <strong>no visibility</strong> (forgetting what's in the fridge, buying duplicates, no expiration tracking). One interview line stuck with us &mdash; &ldquo;I'll forget about having a food item, so it might be hidden in the fridge, and I just don't see it.&rdquo;</p>
+                                    <p>The product answers those directly: a receipt scanner so tracking costs no effort, a food tracker she checks before shopping, expiry reminders, AI recipes that use what's about to go bad, and a stats page showing the money and waste she's avoided.</p>
+                                </div>
+
+                                <div class="kpi-strip">
+                                    <p class="kpi-head">Metrics we'd hold ourselves to</p>
+                                    <ul class="kpis">
+                                        <li><span class="kpi-v">70%+</span><span class="kpi-k">Food saved per user &mdash; North Star</span></li>
+                                        <li><span class="kpi-v">10K</span><span class="kpi-k">Weekly active users by month 6</span></li>
+                                        <li><span class="kpi-v">40%</span><span class="kpi-k">D7 retention</span></li>
+                                        <li><span class="kpi-v">$40</span><span class="kpi-k">Saved per user per month</span></li>
+                                    </ul>
+                                </div>
+
+                                <div class="prose">
+                                    <p>Monetization is freemium &mdash; core tracking free, with premium analytics, meal planning, family sharing and grocery integrations. Acquisition targets where the persona already is: parent groups on Facebook and Instagram, mom and parent influencers, coupon and meal-planning communities, and grocery-adjacent touchpoints.</p>
+                                    <p class="note">Built with two teammates for Applied Product Management at Duke. We split the work by phase rather than by function, so all three of us had a hand in the research, the product decisions and the deck.</p>
+                                </div>
+
+                                <div class="project-links">
+                                    <!-- TODO(Avi): if github.com/awagner8/food-waste-app is FridgeHero's build,
+                                         add a second link here — but brand the repo first. Right now its
+                                         title tag says "Lovable App" and its README says "TODO: Document
+                                         your project here", which reads worse than no link at all. -->
+                                    <a href="assets/projects/FridgeHero_Presentation_Final.pdf" target="_blank" rel="noopener" class="link-out">Full deck (PDF) <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></a>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- ============ 02 · MARIO KART RL ============ -->
+                        <details class="project reveal">
+                            <summary class="project-head">
+                                <div class="project-headline">
+                                    <span class="project-num">02</span>
+                                    <span class="project-kind">Machine learning &middot; Team project</span>
+                                    <h3 class="project-title">Teaching an agent to drive from pixels</h3>
+                                    <p class="project-line">Deep RL agents that learn Super Mario Kart from raw frames, with no hand-crafted features. I built the PPO side.</p>
+                                    <span class="project-tags">
+                                        <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">Gymnasium</span><span class="tag">Lua</span><span class="tag">Docker</span>
+                                    </span>
+                                    <span class="project-more"><span class="more-label"></span> <svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 4.5 6 8.5 10 4.5"/></svg></span>
+                                </div>
+                            </summary>
+
+                            <div class="project-detail">
+                                <div class="prose">
+                                    <p>The question was whether an agent could learn to drive from nothing but the pixels on screen, and how two very different algorithms compare when you do. We wrote a Deep Q-Network and Proximal Policy Optimization from scratch rather than importing them, ran both on two tracks, and benchmarked them against each other.</p>
+                                    <p>I owned the PPO agent &mdash; actor-critic, generalized advantage estimation, the clipped surrogate objective, and entropy scheduling &mdash; along with every PPO training run and the evaluation and plotting pipeline the whole comparison rests on. My teammate built the DQN, the Gymnasium wrappers, and the Lua reward integration that pulls checkpoint progress straight out of game RAM.</p>
+                                    <p>The interesting part wasn't the algorithms, it was the reward function. Our first design terminated episodes on collision, and the agents figured out they could idle next to a wall to farm episode length without ever driving. Switching to progress-based termination improved throughput roughly tenfold. Log-transforming rewards was what finally stabilized PPO training.</p>
+                                    <p>DQN won by a wide margin on raw return &mdash; 7,789 against PPO's 338 &mdash; because experience replay let it revisit the rare lap-completion events that PPO saw once and moved past. But on a track it had never seen, DQN transferred poorly while PPO held about 55% of its return. The headline number and the useful number pointed in opposite directions, which is the finding I'd actually defend.</p>
+                                    <p>We catalogued four distinct failure modes, including &ldquo;replay buffer collapse&rdquo; &mdash; once the buffer fills with only perfect runs, the agent forgets how to recover from a mistake.</p>
+                                </div>
+
+                                <div class="project-links">
+                                    <!-- After forking, change this to https://github.com/awagner8/MarioKart -->
+                                    <a href="https://github.com/T-McLeod/MarioKart" target="_blank" rel="noopener" class="link-out">Source on GitHub <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></a>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- ============ 03 · BREAK//OUT ============ -->
+                        <details class="project reveal">
+                            <summary class="project-head">
+                                <div class="project-headline">
+                                    <span class="project-num">03</span>
+                                    <span class="project-kind">Game &middot; Personal build</span>
+                                    <h3 class="project-title">Break//Out</h3>
+                                    <p class="project-line">A browser brickbreaker with levels, lives and a high score that survives a refresh. Playable right here, nothing to install.</p>
+                                    <span class="project-tags">
+                                        <span class="tag">JavaScript</span><span class="tag">Canvas</span><span class="tag">HTML</span><span class="tag">CSS</span>
+                                    </span>
+                                    <span class="project-more"><span class="more-label"></span> <svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 4.5 6 8.5 10 4.5"/></svg></span>
+                                </div>
+                            </summary>
+
+                            <div class="project-detail">
+                                <div class="prose">
+                                    <p>I wanted to find out how much of a game being fun comes from features and how much comes from tuning. The answer is mostly tuning. Brickbreaker is a deliberately small target &mdash; a paddle, a ball, a grid &mdash; which makes it a good place to test that, because there is nowhere to hide behind scope.</p>
+                                    <p>It runs on a canvas render loop with paddle physics, brick grids that rebuild per level, lives, pause, and a best score kept in <code>localStorage</code> so it persists between sessions. The ball's angle off the paddle depends on where it hits, which is the single change that made it feel like a game rather than a physics demo.</p>
+                                    <p>The bug worth mentioning: after you lost a life, there was no way to relaunch the ball. The game still rendered, the HUD still updated, everything <em>looked</em> alive &mdash; it was simply unplayable from that point on. You only catch it by deliberately losing, which is not what you do when you are testing something you just built and want to work.</p>
+                                    <p>That is the same failure I keep meeting in professional work: the happy path is fine, and the thing nobody exercises is quietly broken. I fixed it, and then I stopped &mdash; it is a finished toy rather than a finished product, and I would rather say so than pretend otherwise.</p>
+                                    <!-- TODO(Avi): decide how you want to describe the build. If you specced
+                                         and directed this with AI assistance, say that plainly — for a PM
+                                         application that is a feature, not a confession. What you should not
+                                         do is leave it ambiguous and get asked about it in an interview. -->
+                                </div>
+
+                                <div class="project-links">
+                                    <a href="assets/projects/breakout/" target="_blank" rel="noopener" class="link-out">Play it <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg></a>
+                                </div>
+                            </div>
+                        </details>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 04 SKILLS ============ -->
+        <section id="skills" class="section section-alt">
+            <div class="container section-grid">
+                <div class="rail">
+                    <p class="rail-label"><span class="rail-num">04</span> Skills</p>
+                </div>
+
+                <div class="section-body">
+                    <h2 class="section-title reveal">What I work with.</h2>
+
+                    <div class="skills">
+                        <div class="skill-col reveal">
+                            <h3 class="skill-head">Product &amp; strategy</h3>
+                            <ul class="skill-list">
+                                <li>Roadmapping &amp; execution planning</li>
+                                <li>RAID log &amp; risk management</li>
+                                <li>Cross-functional stakeholder management</li>
+                                <li>Requirements &amp; rule definition</li>
+                                <li>Market and competitive research</li>
+                                <li>Data analysis &amp; dashboarding</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-col reveal">
+                            <h3 class="skill-head">Technical</h3>
+                            <ul class="skill-list">
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>R &amp; RStudio</li>
+                                <li>Applied machine learning (BERT, classification)</li>
+                                <li>Git &amp; Unix</li>
+                                <li>Claude Code &amp; prompt engineering</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-col reveal">
+                            <h3 class="skill-head">Tools</h3>
+                            <ul class="skill-list">
+                                <li>Excel (modeling, data validation)</li>
+                                <li>PowerPoint &amp; executive storytelling</li>
+                                <li>SharePoint</li>
+                                <li>EDGARPro</li>
+                                <li>Adobe InDesign &amp; Illustrator</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 05 BEYOND ============ -->
+        <section id="beyond" class="section">
+            <div class="container section-grid">
+                <div class="rail">
+                    <p class="rail-label"><span class="rail-num">05</span> Beyond</p>
+                </div>
+
+                <div class="section-body">
+                    <h2 class="section-title reveal">The parts of the resume people actually ask about.</h2>
+
+                    <div class="beyond">
+                        <article class="beyond-item reveal">
+                            <h3>Volunteer Firefighter</h3>
+                            <p class="beyond-meta">Lebanon Volunteer Fire Department &middot; Feb 2026 &ndash; Present</p>
+                            <p>
+                                I respond to live medical emergency calls and assist with patient care under EMS protocols, train weekly with station crews, and take part in multi-department exercises while finishing fire academy coursework toward certification. It is the most direct
+                                lesson I've had in doing the next correct thing while the situation is still changing.
+                            </p>
+                        </article>
+
+                        <article class="beyond-item reveal">
+                            <h3>Project Leader, Duke Consulting Club</h3>
+                            <p class="beyond-meta">Jan 2025 &ndash; Present</p>
+                            <p>
+                                I lead a pro bono engagement with an early-stage K&ndash;12 education AI company, meeting biweekly to shape deliverables and advise on leadership structure and organizational alignment. Most of the value has come from asking what they actually wanted to decide, rather than answering
+                                the question as first posed.
+                            </p>
+                        </article>
+
+                        <article class="beyond-item reveal">
+                            <h3>Chef de Cuisine</h3>
+                            <p class="beyond-meta">Stage &middot; Oct 2023 &ndash; Dec 2025</p>
+                            <p>
+                                I developed and executed monthly seven-course tasting menus for sixteen guests and trained four new members &mdash; sourcing, prep, plating, service. A tasting menu is a dependency graph with a deadline; nothing ships if one station falls behind.
+                            </p>
+                        </article>
+                    </div>
+
+                    <h3 class="sub-head reveal">Off the clock</h3>
+
+                    <div class="passions">
+                        <!-- TODO(Avi): each of these is true but general. One concrete detail
+                             apiece makes them yours — the cookbook you reach for, the car you
+                             actually want, the song you are currently mangling. -->
+                        <div class="passion reveal">
+                            <h4>Cooking</h4>
+                            <p>
+                                I cooked privately for a brief stretch in high school, then spent a couple of years running monthly
+                                tasting menus at Duke. What keeps me in it now is the collecting &mdash; cookbooks
+                                considerably faster than I cook through them &mdash; and the standing excuse to attempt a
+                                recipe I have no business attempting.
+                            </p>
+                        </div>
+
+                        <div class="passion reveal">
+                            <h4>Guitar</h4>
+                            <p>
+                                I played in a band in high school and never really put it down. Most of my playing now is picking it
+                                up to work out whatever song has been stuck in my head that week. Somewhere between
+                                beginner and intermediate, and honest about which.
+                            </p>
+                        </div>
+
+                        <div class="passion reveal">
+                            <h4>Cars</h4>
+                            <p>
+                                Cars have held my attention since I was young &mdash; the engineering underneath,
+                                and the design choices that make one look sleek and another look deliberately bold.
+                                Every car is a stack of tradeoffs somebody had to argue for, and you can usually
+                                read which ones they cared about.
+                            </p>
+                        </div>
+
+                        <div class="passion reveal">
+                            <h4>Travel</h4>
+                            <p>
+                                I travel to eat, mostly &mdash; but the real draw is landing somewhere unfamiliar and having no idea
+                                how anything works. Immersing in a place that runs on different defaults than mine is the
+                                fastest way I know to stop assuming my own are the obvious ones.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="also reveal">
+                        <span class="also-key">Also</span> Shave &amp; Buzz Club, raising money for adolescent and young adult cancer patients and survivors &middot; Habitat for Humanity
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 06 CONTACT ============ -->
+        <section id="contact" class="section section-contact">
+            <div class="container section-grid">
+                <div class="rail">
+                    <p class="rail-label"><span class="rail-num">06</span> Contact</p>
+                </div>
+
+                <div class="section-body">
+                    <h2 class="contact-title reveal">Let's talk.</h2>
+                    <p class="section-intro reveal">
+                        I'm looking for product management roles and internships. I'm also happy to talk about data quality, carve-out mechanics, or the right order to plate seven courses.
+                    </p>
+
+                    <div class="contact-rows reveal">
+                        <div class="contact-row">
+                            <span class="contact-key">Email</span>
+                            <a href="mailto:avi.j.wagner@gmail.com" class="contact-val" id="emailLink">avi.j.wagner@gmail.com</a>
+                            <button class="copy-btn" id="copyEmail" data-copy="avi.j.wagner@gmail.com" aria-label="Copy email address">Copy</button>
+                        </div>
+                        <div class="contact-row">
+                            <span class="contact-key">LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/avi-wagner" target="_blank" rel="noopener" class="contact-val">
+              /in/avi-wagner <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5h4v4"/></svg>
+            </a>
+                        </div>
+                        <div class="contact-row">
+                            <span class="contact-key">Resume</span>
+                            <a href="assets/resume/Avi_Wagner_Resume.pdf" class="contact-val" download>
+              Download PDF <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M6 2v6M3.5 6l2.5 2.5L8.5 6M2.5 10h7"/></svg>
+            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>&copy; <span id="year"></span> Avi Wagner</span>
+            <span class="footer-note">Written by hand. No template, no framework.</span>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Avi Wagner",
+            "email": "avi.j.wagner@gmail.com",
+            "url": "https://www.linkedin.com/in/avi-wagner",
+            "jobTitle": "Computer Science Student",
+            "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "Duke University"
+            },
+            "sameAs": ["https://www.linkedin.com/in/avi-wagner"]
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

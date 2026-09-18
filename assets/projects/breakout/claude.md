@@ -1,0 +1,1 @@
+prefer pixi for package management if applicable 

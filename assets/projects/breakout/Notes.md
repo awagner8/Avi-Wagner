@@ -1,0 +1,1 @@
+There was no way to release the ball after you lost a life and once I fixed that I ran out of credits 

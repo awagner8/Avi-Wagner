@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Secrets — never commit these
+.env
+.env.*
+!.env.example
+
+# Logs & dependency dirs (in case a project folder grows one)
+*.log
+npm-debug.log*
+node_modules/
+
+# Scratch
+_tmp_*
+*.bak
