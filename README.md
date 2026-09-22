@@ -1,4 +1,4 @@
-# avi-wagner-portfolio
+# Avi-Wagner
 
 Personal site for Avi Wagner. Plain HTML/CSS/JS — no framework, no build step,
 no dependencies except Google Fonts.
@@ -103,7 +103,7 @@ Type is Fraunces (display serif), Inter (body), IBM Plex Mono (labels).
 ### GitHub Pages
 ```
 git init && git add . && git commit -m "Portfolio"
-gh repo create avi-wagner-portfolio --public --source=. --push
+gh repo create Avi-Wagner --public --source=. --push
 ```
 Then Settings → Pages → source = `main`, root folder.
 For a custom domain, add a `CNAME` file containing the domain and point DNS at
